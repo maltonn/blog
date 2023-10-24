@@ -40,3 +40,7 @@
 .post pre {
   @apply p-4 mb-9 rounded-md !important;
 }
+
+.katex-html{
+  display: none;
+}
