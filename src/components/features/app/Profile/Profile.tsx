@@ -14,7 +14,7 @@ export const Profile = () => (
     </div>
 
     <p className="text-primary-1">
-      いろいろやってる人です。 / 大阪大学工学部電子情報工学科
+      大阪大学工学部 電子情報工学科 B3
     </p>
 
     <div className="flex gap-4">

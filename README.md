@@ -4,5 +4,5 @@ https://maltonn.github.io/blog/
 
 
 # クローン元
-https://sub-t.github.io/blog-template/
+https://github.com/sub-t/blog-template
 
