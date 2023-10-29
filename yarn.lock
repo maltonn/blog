@@ -491,6 +491,13 @@
   dependencies:
     "@types/unist" "*"
 
+"@types/mdast@^4.0.0":
+  "integrity" "sha512-tYR83EignvhYO9iU3kDg8V28M0jqyh9zzp5GV+EO+AYnyUl3P5ltkTeJuTiFZQFz670FSb3EwT/6LQdX+UdKfw=="
+  "resolved" "https://registry.npmjs.org/@types/mdast/-/mdast-4.0.2.tgz"
+  "version" "4.0.2"
+  dependencies:
+    "@types/unist" "*"
+
 "@types/mdurl@^1.0.0":
   "integrity" "sha512-eC4U9MlIcu2q0KQmXszyn5Akca/0jrQmwDRgpAMJai7qBWq4amIQhZyNau4VYGtCeALvW1/NtjzJJ567aZxfKA=="
   "resolved" "https://registry.npmjs.org/@types/mdurl/-/mdurl-1.0.2.tgz"
@@ -1154,6 +1161,11 @@
   "version" "1.0.2"
   dependencies:
     "mimic-response" "^1.0.0"
+
+"collapse-white-space@^2.0.0":
+  "integrity" "sha512-loKTxY1zCOuG4j9f6EPnuyyYkf58RnhhWTvRoZEokgB+WbdXehfjFviyOVYkqzEWz1Q5kRiZdBYS5SwxbQYwzw=="
+  "resolved" "https://registry.npmjs.org/collapse-white-space/-/collapse-white-space-2.1.0.tgz"
+  "version" "2.1.0"
 
 "color-convert@^1.9.0":
   "integrity" "sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg=="
@@ -2790,6 +2802,11 @@
   "resolved" "https://registry.npmjs.org/is-typedarray/-/is-typedarray-1.0.0.tgz"
   "version" "1.0.0"
 
+"is-url@^1.0.0":
+  "integrity" "sha512-ITvGim8FhRiYe4IQ5uHSkj7pVaPDrCTkNd3yq3cV7iZAcJdHTUMPMEHcqSOy9xZ9qFenQCvi+2wjH9a1nXqHww=="
+  "resolved" "https://registry.npmjs.org/is-url/-/is-url-1.2.4.tgz"
+  "version" "1.2.4"
+
 "is-weakref@^1.0.2":
   "integrity" "sha512-qctsuLZmIQ0+vSSMfoVvyFe2+GSEvnmZ2ezTup1SBse9+twCCeial6EEi3Nc2KFcf6+qz2FBPnjXsk8xhKSaPQ=="
   "resolved" "https://registry.npmjs.org/is-weakref/-/is-weakref-1.0.2.tgz"
@@ -4330,6 +4347,17 @@
     "unist-util-remove-position" "^4.0.0"
     "unist-util-visit" "^4.0.0"
 
+"remark-images@^4.0.0":
+  "integrity" "sha512-YDZffkzmDWAve3tphTLZXlATb7TkJxTxqTJGrZDr+DSCMtVm78rCf4FORB/B+G64B0xGeXDfE6FUUb5mlTg3SQ=="
+  "resolved" "https://registry.npmjs.org/remark-images/-/remark-images-4.0.0.tgz"
+  "version" "4.0.0"
+  dependencies:
+    "@types/mdast" "^4.0.0"
+    "collapse-white-space" "^2.0.0"
+    "is-url" "^1.0.0"
+    "unist-util-position" "^5.0.0"
+    "unist-util-visit-parents" "^6.0.0"
+
 "remark-math@^4.0.0":
   "integrity" "sha512-lH7SoQenXtQrvL0bm+mjZbvOk//YWNuyR+MxV18Qyv8rgFmMEGNuB0TSCQDkoDaiJ40FCnG8lxErc/zhcedYbw=="
   "resolved" "https://registry.npmjs.org/remark-math/-/remark-math-4.0.0.tgz"
@@ -5051,12 +5079,26 @@
   "resolved" "https://registry.npmjs.org/unist-util-is/-/unist-util-is-5.1.1.tgz"
   "version" "5.1.1"
 
+"unist-util-is@^6.0.0":
+  "integrity" "sha512-2qCTHimwdxLfz+YzdGfkqNlH0tLi9xjTnHddPmJwtIG9MGsdbutfTc4P+haPD7l7Cjxf/WZj+we5qfVPvvxfYw=="
+  "resolved" "https://registry.npmjs.org/unist-util-is/-/unist-util-is-6.0.0.tgz"
+  "version" "6.0.0"
+  dependencies:
+    "@types/unist" "^3.0.0"
+
 "unist-util-position@^4.0.0":
   "integrity" "sha512-p/5EMGIa1qwbXjA+QgcBXaPWjSnZfQ2Sc3yBEEfgPwsEmJd8Qh+DSk3LGnmOM4S1bY2C0AjmMnB8RuEYxpPwXQ=="
   "resolved" "https://registry.npmjs.org/unist-util-position/-/unist-util-position-4.0.3.tgz"
   "version" "4.0.3"
   dependencies:
     "@types/unist" "^2.0.0"
+
+"unist-util-position@^5.0.0":
+  "integrity" "sha512-fucsC7HjXvkB5R3kTCO7kUjRdrS0BJt3M/FPxmHMBOm8JQi2BsHAHFsy27E0EolP8rp0NzXsJ+jNPyDWvOJZPA=="
+  "resolved" "https://registry.npmjs.org/unist-util-position/-/unist-util-position-5.0.0.tgz"
+  "version" "5.0.0"
+  dependencies:
+    "@types/unist" "^3.0.0"
 
 "unist-util-remove-position@^4.0.0":
   "integrity" "sha512-TkBb0HABNmxzAcfLf4qsIbFbaPDvMO6wa3b3j4VcEzFVaw1LBKwnW4/sRJ/atSLSzoIg41JWEdnE7N6DIhGDGQ=="
@@ -5110,6 +5152,14 @@
   dependencies:
     "@types/unist" "^2.0.0"
     "unist-util-is" "^5.0.0"
+
+"unist-util-visit-parents@^6.0.0":
+  "integrity" "sha512-L/PqWzfTP9lzzEa6CKs0k2nARxTdZduw3zyh8d2NVBnsyvHjSX4TWse388YrrQKbvI8w20fGjGlhgT96WwKykw=="
+  "resolved" "https://registry.npmjs.org/unist-util-visit-parents/-/unist-util-visit-parents-6.0.1.tgz"
+  "version" "6.0.1"
+  dependencies:
+    "@types/unist" "^3.0.0"
+    "unist-util-is" "^6.0.0"
 
 "unist-util-visit@^2.0.0", "unist-util-visit@^2.0.3":
   "integrity" "sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q=="
