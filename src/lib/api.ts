@@ -47,7 +47,16 @@ type Field = keyof PostType;
 export const getAllPosts = (fields: Field[] = []) => {
   const slugs = getPostSlugs();
   const posts = slugs.filter((slug) => slug.slice(-3)==".md")
-    .map((slug) => getPostBySlug(slug, fields))
-    .sort((post1, post2) => (post1.date! > post2.date! ? -1 : 1));
-  return posts;
+  .map((slug) => getPostBySlug(slug, fields))
+  .sort((post1, post2) => {
+      if(post1.tags?.includes("pickup")==post2.tags?.includes("pickup")){
+        return post1.date! > post2.date! ? -1 : 1
+      }
+      if(post1.tags?.includes("pickup")){
+        return -1;
+      }else{
+        return 1;
+      }
+    });
+    return posts;
 };

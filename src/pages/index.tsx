@@ -14,6 +14,7 @@ export const getStaticProps = async () => {
     'slug',
     'coverImage',
     'excerpt',
+    'tags',
   ]).slice(0, 4);
 
   return {
