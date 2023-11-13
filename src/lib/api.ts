@@ -46,7 +46,7 @@ type Field = keyof PostType;
 
 export const getAllPosts = (fields: Field[] = []) => {
   const slugs = getPostSlugs();
-  const posts = slugs
+  const posts = slugs.filter((slug) => slug.slice(-3)==".md")
     .map((slug) => getPostBySlug(slug, fields))
     .sort((post1, post2) => (post1.date! > post2.date! ? -1 : 1));
   return posts;
