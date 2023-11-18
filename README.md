@@ -1,6 +1,6 @@
 # Maltonn Blog
 Maltonnの個人ブログです。  
-https://maltonn.github.io/blog/
+http://blog.maltonn.com/
 
 
 # クローン元
