@@ -10,6 +10,10 @@ import remarkRehype from 'remark-rehype';
 import { unified } from 'unified';
 
 export default async function markdownToHtml(markdown: string) {
+  const markdownWithImages = markdown.replace(
+    /!\[(.*?)\]\((.*?)\)/g,
+    '![$1](../../assets/blog/$2)'
+  );
   const result = await unified()
     .use(remarkParse)
     .use(remarkMath)
@@ -20,7 +24,7 @@ export default async function markdownToHtml(markdown: string) {
     .use(rehypeSlug)
     .use(rehypeAutolinkHeadings)
     .use(rehypeStringify)
-    .process(markdown);
+    .process(markdownWithImages);
 
   return result.toString();
 }
