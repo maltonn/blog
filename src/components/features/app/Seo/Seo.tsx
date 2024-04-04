@@ -16,7 +16,7 @@ export const Seo = () => {
           type: 'website',
           title: 'blog',
           description: 'blog',
-          site_name: 'blog',
+          site_name: 'Malton blog',
           url: ROOT_URL,
           images: [
             {
